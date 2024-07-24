@@ -1,0 +1,42 @@
+/* =============================================================
+Skeleton
+============================================================= */
+.is-skeleton {
+    animation: skeleton 3.5s ease-in-out infinite;
+    border-radius:var(--radius-s);
+}
+
+.is-skeleton > * {
+    visibility:hidden !important;
+}
+
+.is-skeleton-lines {
+    display:flex;
+    flex-direction:column;
+    gap:var(--gutter-xs);
+}
+
+.is-skeleton-lines div,
+.is-skeleton-lines div.title-skeleton  {
+    animation: skeleton 3.5s ease-in-out infinite;
+    border-radius:var(--radius-s);
+    height:var(--gutter-s);
+}
+
+.title-skeleton {
+    max-width:50%;
+}
+
+@keyframes skeleton {
+    0% {
+        background-color:#cccccc;
+    }
+
+    50% {
+        background-color:#eeeeee;
+    }
+
+    100% {
+        background-color:#cccccc;
+    }
+}

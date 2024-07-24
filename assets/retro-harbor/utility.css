@@ -1,0 +1,288 @@
+/* =============================================================
+Utility Classes
+
+- Gutters / Spacing ~ Padding / Margin
+    - Padding Block
+    - Padding Inline
+    - Margin Block
+    - Margin Inline
+- Colors
+    - Text Colors
+    - Background Colors
+- Font Families
+- Font Styles
+- Misc / Other
+    - Overlays
+- Container Utilities
+    - Images
+    - Videos
+
+============================================================= */
+/* ===================
+Gutters / Spacing ~ Padding / Margin
+=================== */
+/* Padding Block */
+.padding-block-xxs {
+    padding-block:var(--gutter-xxs);
+}
+
+.padding-block-xs {
+    padding-block:var(--gutter-xs);
+}
+
+.padding-block-s {
+    padding-block:var(--gutter-s);
+}
+
+.padding-block-m {
+    padding-block:var(--gutter-m);
+}
+
+.padding-block-l {
+    padding-block:var(--gutter-l);
+}
+
+.padding-block-xl {
+    padding-block:var(--gutter-xl);
+}
+
+.padding-block-xxl {
+    padding-block:var(--gutter-xxl);
+}
+
+/* Padding Inline */
+.padding-inline-xxs {
+    padding-inline:var(--gutter-xxs);
+}
+
+.padding-inline-xs {
+    padding-inline:var(--gutter-xs);
+}
+
+.padding-inline-s {
+    padding-inline:var(--gutter-s);
+}
+
+.padding-inline-m {
+    padding-inline:var(--gutter-m);
+}
+
+.padding-inline-l {
+    padding-inline:var(--gutter-l);
+}
+
+.padding-inline-xl {
+    padding-inline:var(--gutter-xl);
+}
+
+.padding-inline-xxl {
+    padding-inline:var(--gutter-xxl);
+}
+
+/* Margin Block */
+.margin-block-xxs {
+    margin-block:var(--gutter-xxs);
+}
+
+.margin-block-xs {
+    margin-block:var(--gutter-xs);
+}
+
+.margin-block-s {
+    margin-block:var(--gutter-s);
+}
+
+.margin-block-m {
+    margin-block:var(--gutter-m);
+}
+
+.margin-block-l {
+    margin-block:var(--gutter-l);
+}
+
+.margin-block-xl {
+    margin-block:var(--gutter-xl);
+}
+
+.margin-block-xxl {
+    margin-block:var(--gutter-xxl);
+}
+
+/* ===================
+Colors
+=================== */
+/* Text Colours */
+.light-t {
+    color: var(--white);
+}
+
+.dark-t {
+    color: /* Dark Text Color */;
+}
+
+/* Background Colors */
+.light-bg {
+    background-color: /* Light Text Color */;
+}
+
+.dark-bg {
+    background-color: var(--black);
+}
+
+.green-bg {
+    background-color:var(--ntf-200);
+}
+
+/* Add other color utilities as needed */
+
+/* ===================
+Font Families
+=================== */
+.ff-primary {
+    font-family: var(--font-family-primary);
+}
+
+.ff-secondary {
+    font-family: var(--font-family-secondary);
+}
+
+.ff-third {
+    font-family: var(--font-family-third);
+}
+
+/* ===================
+Font Styles
+=================== */
+.overline {
+    text-transform:uppercase;
+}
+
+em,
+.italic {
+    font-style: italic;
+}
+
+strong,
+.strong {
+    font-weight:var(--fw-bold);
+}
+
+.small {
+    --font-size:0.875rem;
+}
+
+.medium {
+    --font-size:1.2rem;
+}
+
+.large {
+    --font-size:1.5rem;
+}
+
+.center-t {
+    text-align:center;
+}
+
+/* ===================
+Misc / Other
+=================== */
+/* Overflows */
+.overflow-hidden {
+    overflow:hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.no-scrollbars {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    overflow-y: scroll;
+}
+
+.no-scrollbars::-webkit-scrollbar  {
+    display: none;
+}
+
+/* Overlays */
+.overlay__default {
+    border-image:fill 1 linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%);
+}
+
+.overlay__radial {
+    border-image:fill 1 radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
+}
+
+.overlay__linear {
+    border-image:fill 1 linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%);
+}
+
+/* Selection */
+::-moz-selection {
+    color: #eab463;
+    background: var(--black);
+}
+
+::selection  { /* Code for Firefox */
+    color: #eab463;
+    background: var(--black);
+}
+
+/* ===================
+Container Utilities
+=================== */
+/* Images */
+.img-holder-square {
+    width:100%;
+    aspect-ratio:1 / 1;
+}
+
+.img-holder-golden {
+    width:100%;
+    aspect-ratio:16 / 9;
+}
+
+.img-holder {
+    display:block;
+}
+
+.img-holder img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Videos ~ Youtube / Vimeo Embeds */
+.video-holder {
+    position: relative;
+    aspect-ratio:16 / 9;
+}
+
+.video-holder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.play-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.play-video::before {
+    content: '▶';
+    font-size: 4rem;
+    color: var(--white);
+}
+

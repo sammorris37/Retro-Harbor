@@ -1,0 +1,235 @@
+/* =============================================================
+Inputs
+
+- General form styles
+- Input fields
+    - Focus states for input fields
+    - Autofill Background
+- Buttons
+- Checkboxes and radio buttons
+- Labels
+    - Label focus state
+- Select dropdowns
+    - Focus states for select dropdowns
+- Fieldset and Legend
+- Password field with icon
+- Responsive Settings
+
+============================================================= */
+/* ===================
+General form styles
+=================== */
+.field-group,
+.field-group--select,
+.field-group--message {
+    position:relative;
+    margin-bottom:var(--gutter-s); /* Can be removed if required */
+}
+
+.field-group .required {
+    color:var(--ntf-600);
+}
+
+/* ===================
+Input fields
+=================== */
+input,
+textarea,
+select,
+button {
+    font-family:var(--font-family-primary);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    width: 100%;
+    padding: var(--gutter-xs);
+    display: inline-block;
+    border: 1px solid var(--grey-600);
+    border-radius: var(--radius-xs);
+    font-size: 1rem;
+}
+
+textarea {
+    display:block;
+    resize:vertical;
+    min-height:80px;
+}
+
+/* Focus states for input fields */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    outline: 1px solid var(--grey-100);
+    outline-offset: 0;
+}
+
+/* Autofill Background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--ntf-100) inset !important;
+}
+
+/* ===================
+Buttons
+=================== */
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    border: none;
+    cursor: pointer;
+}
+
+/* ===================
+Checkboxes and radio buttons
+=================== */
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+    margin:0;
+    accent-color:var(--black);
+}
+
+/* ===================
+Labels
+=================== */
+label {
+    font-size:1rem;
+}
+
+.field-group--select label {
+    position:absolute;
+    top:0;
+    left:0;
+    transform:translateY(calc(-1 * (var(--font-size) + .4rem)));
+    font-size:0.7rem;
+}
+
+.field-group label,
+.field-group--message label {
+    font-size:1rem;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:var(--gutter-xs);
+    transition:all .3s ease;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+.field-group--message label {
+    top:calc(var(--font-size) + .5rem);
+}
+
+/* Label focus state */
+textarea:focus + label,
+input:-webkit-autofill  + label,
+.field-group input:focus + label,
+input:-webkit-autofill:hover  + label, 
+input:-webkit-autofill:focus  + label, 
+input:-webkit-autofill:active + label,
+textarea:not(:placeholder-shown) + label,
+.field-group input:not(:placeholder-shown) + label {
+    top:0;
+    left:0;
+    transform:translateY(calc(-1 * (var(--font-size) + .4rem)));
+    font-size:0.7rem;
+    opacity:1;
+}
+
+/* ===================
+Select dropdowns
+=================== */
+select {
+    width: 100%;
+    padding: var(--gutter-xs);
+    display: inline-block;
+    border: 1px solid var(--grey-600);
+    border-radius: var(--radius-xs);
+    font-size: 1rem;
+}
+
+/* Focus states for select dropdowns */
+select:focus {
+    outline: 1px solid var(--grey-100);
+    outline-offset: 0;
+}
+
+/* ===================
+Fieldset and Legend
+=================== */
+fieldset {
+    border: 1px solid var(--grey-600);
+    padding: var(--gutter-s);
+    border-radius: var(--radius-xs);
+}
+
+legend {
+    padding: 0 var(--gutter-xs);
+}
+
+/* ===================
+Password field with icon
+=================== */
+.password-container .toggle-password {
+    position: absolute;
+    top: 0;
+    right: var(--gutter-xs);
+    cursor: pointer;
+    height:100%;
+    display:flex;
+    align-items:center;
+    opacity:0.7;
+}
+
+.password-container .toggle-password:hover {
+    opacity:1;
+}
+
+.password-container .toggle-password svg {
+    width:1rem;
+    height:1rem;
+    pointer-events:none;
+}
+
+.password-container input[type="password"] {
+    padding-right:var(--gutter-m);
+}
+
+/* ===================
+Responsive Settings
+=================== */
+@media only screen and (max-width: 1041px) {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    textarea,
+    select {
+        width: 100%;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+        width: 100%;
+    }
+}

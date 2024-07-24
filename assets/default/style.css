@@ -1,0 +1,135 @@
+html {
+    scroll-padding-top: 4rem;
+  }
+
+.intro {
+    margin-top:var(--gutter-l);
+    margin-bottom:var(--gutter-l);
+    grid-template-columns:300px 1fr;
+    gap:var(--gutter-m);
+}
+
+.intro .links ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+}
+
+.intro .links ul li a {
+    display:block;
+    padding:var(--gutter-xs) 0;
+    text-decoration:none;
+    width:95%;
+    display:block;
+}
+
+.content-container {
+    padding-top:var(--gutter-m);
+}
+
+.content-container > div {
+    margin-bottom:var(--gutter-l);
+    padding-bottom:var(--gutter-l);
+    border-bottom:1px solid #f1f1f1;
+}
+
+.grid-example {
+    display:flex;
+    flex-direction:column;
+    margin-top:var(--gutter-s);
+}
+
+.sidebar {
+    position:relative;
+    height:100%;
+    background-color:#f3f3f3;
+    border:1px solid #ccc;
+    border-radius:var(--radius-s);
+    padding:var(--gutter-s);
+    padding-top:0;
+}
+
+.links {
+    position: sticky;
+    width:100%;
+    top:0;
+    padding-top:var(--gutter-s);
+    scroll-margin-top: 4rem;
+}
+
+.separator {
+    height:1px;
+    background-color:#ccc;
+    width:100%;
+    display:block;
+    margin:var(--gutter-xs) 0;
+}
+
+ul.no-style {
+    margin-top:var(--gutter-xs);
+}
+
+ul.no-style li {
+    margin-bottom:var(--gutter-xs);
+}
+
+.site-footer {
+    padding-bottom:var(--gutter-l);
+}
+
+hr {
+    height: 1px;
+    color: #cccccc;
+    background: #cccccc;
+    font-size: 0;
+    border: 0;
+    margin:var(--gutter-m) 0;
+}
+
+
+/* code and pre tags */
+pre {
+    display: block;
+unicode-bidi: embed;
+white-space: pre-wrap;
+word-wrap: break-word;
+background-color:#292929;
+color:#eab463;
+padding:var(--gutter-s);
+border-radius:var(--radius-s);
+margin-bottom:var(--gutter-s);
+max-width:100%;
+}
+
+pre.single {
+    padding: var(--gutter-xxs) var(--gutter-xs);
+    max-width:60%;
+    margin-bottom:0;
+}
+
+pre .comment {
+    color:#8b8b8b;
+}
+
+@media only screen and (max-width: 1171px) {
+    .intro {
+    grid-template-columns:1fr;
+    }
+    .links {
+    position: static;
+    }
+    pre.single {
+        max-width:100%;
+    }
+    pre {
+        width:calc(100vw - 4rem);
+    }
+}
+
+
+/* Example Pages */
+.example-container {
+    margin-top:var(--gutter-s);
+}

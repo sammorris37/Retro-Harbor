@@ -1,0 +1,85 @@
+/* =============================================================
+Navigation Styles
+
+** Remove any class with 'submenu', 'sub-item' unless using mobile-navigation-example-2
+
+============================================================= */
+/* ====================
+Open / Close Buttons
+==================== */
+.drawerBtn {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin-bottom: 5px;
+	color: #000000;
+}
+
+/* ====================
+Navigation Drawer
+==================== */
+.MobileDrawerNav,
+.navPage,
+.submenu {
+	display: none;
+}
+
+.MobileDrawerNav.open,
+.navPage.active,
+.submenu.active {
+	display: block;
+}
+
+.MobileDrawerNav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100dvh;
+	overflow: scroll;
+	overscroll-behavior: contain;
+	background-color: white;
+	padding: 2rem;
+}
+
+/* ====================
+Navigation Items
+==================== */
+.menu-items {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.menu-item a {
+	display: block;
+	background-color: #cccccc;
+	color: #000000;
+	padding: 5px;
+}
+
+.menu-item.has-children a {
+	background-color: #eab463;
+	color: #000000;
+}
+
+.submenu {
+	display: none;
+}
+
+.has-submenu > a {
+    background-color:#63eada;
+}
+
+.sub-item a {
+    background-color:#b2eae3;
+}
+
+.backBtn {
+	background-color: #99ea63;
+	color: #000000;
+	padding: 5px;
+	display: inline-block;
+	margin-bottom: 5px;
+}

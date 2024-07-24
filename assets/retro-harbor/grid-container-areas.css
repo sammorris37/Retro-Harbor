@@ -1,0 +1,88 @@
+/* Grid Container */
+.grid-container {
+    --container-margin:2rem;
+    --other-columns-width: calc(var(--container-margin) + var(--gutter-xxl) * 6 + var(--container-margin)); 
+    --extrathin-columns:minmax(0, calc(var(--max-width) - var(--other-columns-width)));
+    display: grid;
+    grid-template-columns: 
+        [ full-start ] 
+            1fr
+            [ breakout-start ] 
+                var(--container-margin) 
+                    [ content-start ] 
+                        var(--gutter-xxl) 
+                            [ indent-start ] 
+                                var(--gutter-xxl) 
+                                    [ thin-start ] 
+                                        var(--gutter-xxl) 
+                                            [ extrathin-start ] 
+                                                var(--extrathin-columns)
+                                                var(--extrathin-columns)
+                                            [ extrathin-end ] 
+                                        var(--gutter-xxl) 
+                                    [ thin-end ] 
+                                var(--gutter-xxl) 
+                            [ indent-end ] 
+                        var(--gutter-xxl) 
+                    [ content-end ] 
+                var(--container-margin) 
+            [ breakout-end ]
+            1fr
+        [ full-end ];
+    gap: var(--section-gutter) 0;
+}
+
+@media only screen and (max-width: 1171px) {
+    .grid-container {
+        --container-margin:1rem;
+    }
+
+    .grid-container * {
+        --container-margin:2rem;
+    }
+}
+
+/* Full Width (No Gutters) */
+.grid-full_width {
+    grid-column: full;
+}
+
+/* Max Width Content (No Gutters) */
+.grid-breakout {
+    grid-column: breakout;
+}
+
+/* Standard Content Area (With Gutters) */
+.grid-content {
+    grid-column: content;
+}
+
+/* Indented Content (Extra Gutter Spacing)*/
+.grid-indent {
+    grid-column: indent;
+}
+
+/* Thin Content (Extra Thin Gutter Spacing)*/
+.grid-thin {
+    grid-column: thin;
+}
+
+/* Extra Thin Content (EXTRA EXTRA Thin Gutter Spacing)*/
+.grid-extrathin {
+    grid-column:extrathin;
+}
+
+.grid-container.grid-extrathin,
+.grid-container.grid-thin {
+    --gutter-xxl: 0rem;
+}
+
+@media only screen and (max-width: 769px) {
+    .grid-container {
+        --gutter-xxl: 0rem;
+    }
+
+    .grid-container * {
+        --gutter-xxl: 0rem;
+    }
+}
