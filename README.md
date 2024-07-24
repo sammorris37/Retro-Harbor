@@ -35,9 +35,9 @@ This repository includes the following components:
 .container /* Global Use */
 .container__full-width /* Full Width  (Without Gutters) */
 .container__max-width /* Max Width Container (With Gutters) */
-.container__max-indent /* Indented Container (With Gutters) */
-.container__max-thin /* Thin Container (With Gutters) */
-.container__max-extrathin /* Extra Thin Container (With Gutters) */
+.container__indent /* Indented Container (With Gutters) */
+.container__thin /* Thin Container (With Gutters) */
+.container__extrathin /* Extra Thin Container (With Gutters) */
 ```
 **HTML Example**
 ```html
