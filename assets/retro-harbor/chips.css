@@ -2,20 +2,19 @@
 Chip Styles
 ============================================================= */
 .chip {
-    --gutter-xxs:0.2rem;
-    --gutter-s:1rem;
-    --button-color:var(--secondary-200);
-    --button-text-color:var(--primary-400);
-    --font-size:0.775rem;
+    --chip-padding:0.2rem 1rem;
+    --chip-color:var(--secondary-200);
+    --chip-text-color:var(--primary-400);
+    --chip-font-size:0.875rem;
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    padding:var(--gutter-xxs) var(--gutter-s);
+    padding:var(--chip-padding);
     border: none;
-    background: var(--button-color);
-    color: var(--button-text-color);
+    background: var(--chip-color);
+    color: var(--chip-text-color);
     border-radius:var(--radius-xl);
-    font-size:var(--font-size);
+    font-size:var(--chip-font-size);
 }
 
 
@@ -23,26 +22,26 @@ Chip Styles
 Chip Colours 
 ============================================================= */
 .chip__green {
-    --button-color:var(--ntf-200);
-    --button-text-color:var(--white);
+    --chip-color:var(--ntf-200);
+    --chip-text-color:var(--white);
 }
 
 .chip__blue {
-    --button-color:var(--ntf-300);
-    --button-text-color:var(--white);
+    --chip-color:var(--ntf-300);
+    --chip-text-color:var(--white);
 }
 
 .chip__yellow {
-    --button-color:var(--ntf-400);
-    --button-text-color:var(--primary-400);
+    --chip-color:var(--ntf-400);
+    --chip-text-color:var(--primary-400);
 }
 
 .chip__orange {
-    --button-color:var(--ntf-500);
-    --button-text-color:var(--white);
+    --chip-color:var(--ntf-500);
+    --chip-text-color:var(--white);
 }
 
 .chip__red {
-    --button-color:var(--ntf-600);
-    --button-text-color:var(--white);
+    --chip-color:var(--ntf-600);
+    --chip-text-color:var(--white);
 }

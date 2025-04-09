@@ -21,167 +21,180 @@ Utility Classes
 /* ===================
 Gutters / Spacing ~ Padding / Margin
 =================== */
-/* Padding Block */
-.padding-block-xxs {
-    padding-block:var(--gutter-xxs);
-}
+/* Margin Block Start */
+.mbs-100 { margin-block-start: var(--gutter-100); }
+.mbs-200 { margin-block-start: var(--gutter-200); }
+.mbs-300 { margin-block-start: var(--gutter-300); }
+.mbs-400 { margin-block-start: var(--gutter-400); }
+.mbs-500 { margin-block-start: var(--gutter-500); }
+.mbs-600 { margin-block-start: var(--gutter-600); }
+.mbs-700 { margin-block-start: var(--gutter-700); }
+.mbs-800 { margin-block-start: var(--gutter-800); }
+.mbs-900 { margin-block-start: var(--gutter-900); }
 
-.padding-block-xs {
-    padding-block:var(--gutter-xs);
-}
-
-.padding-block-s {
-    padding-block:var(--gutter-s);
-}
-
-.padding-block-m {
-    padding-block:var(--gutter-m);
-}
-
-.padding-block-l {
-    padding-block:var(--gutter-l);
-}
-
-.padding-block-xl {
-    padding-block:var(--gutter-xl);
-}
-
-.padding-block-xxl {
-    padding-block:var(--gutter-xxl);
-}
-
-/* Padding Inline */
-.padding-inline-xxs {
-    padding-inline:var(--gutter-xxs);
-}
-
-.padding-inline-xs {
-    padding-inline:var(--gutter-xs);
-}
-
-.padding-inline-s {
-    padding-inline:var(--gutter-s);
-}
-
-.padding-inline-m {
-    padding-inline:var(--gutter-m);
-}
-
-.padding-inline-l {
-    padding-inline:var(--gutter-l);
-}
-
-.padding-inline-xl {
-    padding-inline:var(--gutter-xl);
-}
-
-.padding-inline-xxl {
-    padding-inline:var(--gutter-xxl);
-}
+/* Margin Block End */
+.mbe-100 { margin-block-end: var(--gutter-100); }
+.mbe-200 { margin-block-end: var(--gutter-200); }
+.mbe-300 { margin-block-end: var(--gutter-300); }
+.mbe-400 { margin-block-end: var(--gutter-400); }
+.mbe-500 { margin-block-end: var(--gutter-500); }
+.mbe-600 { margin-block-end: var(--gutter-600); }
+.mbe-700 { margin-block-end: var(--gutter-700); }
+.mbe-800 { margin-block-end: var(--gutter-800); }
+.mbe-900 { margin-block-end: var(--gutter-900); }
 
 /* Margin Block */
-.margin-block-xxs {
-    margin-block:var(--gutter-xxs);
-}
+.mb-100 { margin-block: var(--gutter-100); }
+.mb-200 { margin-block: var(--gutter-200); }
+.mb-300 { margin-block: var(--gutter-300); }
+.mb-400 { margin-block: var(--gutter-400); }
+.mb-500 { margin-block: var(--gutter-500); }
+.mb-600 { margin-block: var(--gutter-600); }
+.mb-700 { margin-block: var(--gutter-700); }
+.mb-800 { margin-block: var(--gutter-800); }
+.mb-900 { margin-block: var(--gutter-900); }
 
-.margin-block-xs {
-    margin-block:var(--gutter-xs);
-}
+/* Margin Inline */
+.mi-100 { margin-inline: var(--gutter-100); }
+.mi-200 { margin-inline: var(--gutter-200); }
+.mi-300 { margin-inline: var(--gutter-300); }
+.mi-400 { margin-inline: var(--gutter-400); }
+.mi-500 { margin-inline: var(--gutter-500); }
+.mi-600 { margin-inline: var(--gutter-600); }
+.mi-700 { margin-inline: var(--gutter-700); }
+.mi-800 { margin-inline: var(--gutter-800); }
+.mi-900 { margin-inline: var(--gutter-900); }
 
-.margin-block-s {
-    margin-block:var(--gutter-s);
-}
+/* Margin (all sides) */
+.m-100 { margin: var(--gutter-100); }
+.m-200 { margin: var(--gutter-200); }
+.m-300 { margin: var(--gutter-300); }
+.m-400 { margin: var(--gutter-400); }
+.m-500 { margin: var(--gutter-500); }
+.m-600 { margin: var(--gutter-600); }
+.m-700 { margin: var(--gutter-700); }
+.m-800 { margin: var(--gutter-800); }
+.m-900 { margin: var(--gutter-900); }
 
-.margin-block-m {
-    margin-block:var(--gutter-m);
-}
+/* Padding Block Start */
+.pbs-100 { padding-block-start: var(--gutter-100); }
+.pbs-200 { padding-block-start: var(--gutter-200); }
+.pbs-300 { padding-block-start: var(--gutter-300); }
+.pbs-400 { padding-block-start: var(--gutter-400); }
+.pbs-500 { padding-block-start: var(--gutter-500); }
+.pbs-600 { padding-block-start: var(--gutter-600); }
+.pbs-700 { padding-block-start: var(--gutter-700); }
+.pbs-800 { padding-block-start: var(--gutter-800); }
+.pbs-900 { padding-block-start: var(--gutter-900); }
 
-.margin-block-l {
-    margin-block:var(--gutter-l);
-}
+/* Padding Block End */
+.pbe-100 { padding-block-end: var(--gutter-100); }
+.pbe-200 { padding-block-end: var(--gutter-200); }
+.pbe-300 { padding-block-end: var(--gutter-300); }
+.pbe-400 { padding-block-end: var(--gutter-400); }
+.pbe-500 { padding-block-end: var(--gutter-500); }
+.pbe-600 { padding-block-end: var(--gutter-600); }
+.pbe-700 { padding-block-end: var(--gutter-700); }
+.pbe-800 { padding-block-end: var(--gutter-800); }
+.pbe-900 { padding-block-end: var(--gutter-900); }
 
-.margin-block-xl {
-    margin-block:var(--gutter-xl);
-}
+/* Padding Block */
+.pb-100 { padding-block: var(--gutter-100); }
+.pb-200 { padding-block: var(--gutter-200); }
+.pb-300 { padding-block: var(--gutter-300); }
+.pb-400 { padding-block: var(--gutter-400); }
+.pb-500 { padding-block: var(--gutter-500); }
+.pb-600 { padding-block: var(--gutter-600); }
+.pb-700 { padding-block: var(--gutter-700); }
+.pb-800 { padding-block: var(--gutter-800); }
+.pb-900 { padding-block: var(--gutter-900); }
 
-.margin-block-xxl {
-    margin-block:var(--gutter-xxl);
-}
+/* Padding Inline */
+.pi-100 { padding-inline: var(--gutter-100); }
+.pi-200 { padding-inline: var(--gutter-200); }
+.pi-300 { padding-inline: var(--gutter-300); }
+.pi-400 { padding-inline: var(--gutter-400); }
+.pi-500 { padding-inline: var(--gutter-500); }
+.pi-600 { padding-inline: var(--gutter-600); }
+.pi-700 { padding-inline: var(--gutter-700); }
+.pi-800 { padding-inline: var(--gutter-800); }
+.pi-900 { padding-inline: var(--gutter-900); }
+
+/* Padding (all sides) */
+.p-100 { padding: var(--gutter-100); }
+.p-200 { padding: var(--gutter-200); }
+.p-300 { padding: var(--gutter-300); }
+.p-400 { padding: var(--gutter-400); }
+.p-500 { padding: var(--gutter-500); }
+.p-600 { padding: var(--gutter-600); }
+.p-700 { padding: var(--gutter-700); }
+.p-800 { padding: var(--gutter-800); }
+.p-900 { padding: var(--gutter-900); }
+
+
+/* ===================
+Border Radius
+=================== */
+.radius-100 { border-radius: var(--radius-100); }
+.radius-200 { border-radius: var(--radius-200); }
+.radius-300 { border-radius: var(--radius-300); }
+.radius-400 { border-radius: var(--radius-400); }
+.radius-500 { border-radius: var(--radius-500); }
+.radius-600 { border-radius: var(--radius-600); }
+.radius-700 { border-radius: var(--radius-700); }
+.radius-800 { border-radius: var(--radius-800); }
+.radius-900 { border-radius: var(--radius-900); }
 
 /* ===================
 Colors
 =================== */
-/* Text Colours */
-.light-t {
-    color: var(--white);
-}
+/* ---------
+Primary Colors
+--------- */
 
-.dark-t {
-    color: /* Dark Text Color */;
-}
+/* Add here */
 
-/* Background Colors */
-.light-bg {
-    background-color: /* Light Text Color */;
-}
+/* ---------
+Shades
+--------- */
+/* Background Color */
+.bg-black { background-color: var(--black); }
+.bg-white { background-color: var(--white); }
 
-.dark-bg {
-    background-color: var(--black);
-}
+.bg-grey-100 { background-color: var(--grey-100); }
+.bg-grey-200 { background-color: var(--grey-200); }
+.bg-grey-300 { background-color: var(--grey-300); }
+.bg-grey-400 { background-color: var(--grey-400); }
+.bg-grey-500 { background-color: var(--grey-500); }
+.bg-grey-600 { background-color: var(--grey-600); }
+.bg-grey-700 { background-color: var(--grey-700); }
+.bg-grey-800 { background-color: var(--grey-800); }
+.bg-grey-900 { background-color: var(--grey-900); }
 
-.green-bg {
-    background-color:var(--ntf-200);
-}
+/* Text Color */
+.text-black { background-color: var(--black); }
+.text-white { background-color: var(--white); }
+
+.text-grey-100 { color: var(--grey-100); }
+.text-grey-200 { color: var(--grey-200); }
+.text-grey-300 { color: var(--grey-300); }
+.text-grey-400 { color: var(--grey-400); }
+.text-grey-500 { color: var(--grey-500); }
+.text-grey-600 { color: var(--grey-600); }
+.text-grey-700 { color: var(--grey-700); }
+.text-grey-800 { color: var(--grey-800); }
+.text-grey-900 { color: var(--grey-900); }
 
 /* Add other color utilities as needed */
 
 /* ===================
-Font Families
+Typography
 =================== */
-.ff-primary {
-    font-family: var(--font-family-primary);
-}
 
-.ff-secondary {
-    font-family: var(--font-family-secondary);
-}
 
-.ff-third {
-    font-family: var(--font-family-third);
-}
 
-/* ===================
-Font Styles
-=================== */
-.overline {
-    text-transform:uppercase;
-}
 
-em,
-.italic {
-    font-style: italic;
-}
-
-strong,
-.strong {
-    font-weight:var(--fw-bold);
-}
-
-.small {
-    --font-size:0.875rem;
-}
-
-.medium {
-    --font-size:1.2rem;
-}
-
-.large {
-    --font-size:1.5rem;
-}
-
-.center-t {
-    text-align:center;
-}
+.text-center { text-align:center; }
 
 /* ===================
 Misc / Other

@@ -67,7 +67,7 @@ Grids
 .grid {
     --grid-max-col-count:1;
     --grid-min-col-size: 200px;
-    --grid-gap:var(--gutter-s);
+    --grid-gap:2rem;
 
     /* calcs, do NOT edit */
     --grid-col-size-calc: calc((100% - var(--grid-gap) * var(--grid-max-col-count)) / var(--grid-max-col-count));
@@ -88,4 +88,10 @@ Grids
 
 .grid-4-col {
     --grid-max-col-count:4;
+}
+
+@media only screen and (max-width: 769px) {
+    .grid {
+        --grid-gap:1rem;
+    }
 }

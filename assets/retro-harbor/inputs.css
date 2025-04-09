@@ -23,7 +23,7 @@ General form styles
 .field-group--select,
 .field-group--message {
     position:relative;
-    margin-bottom:var(--gutter-s); /* Can be removed if required */
+    margin-bottom:var(--gutter-400); /* Can be removed if required */
 }
 
 .field-group .required {
@@ -49,10 +49,10 @@ input[type="tel"],
 input[type="url"],
 textarea {
     width: 100%;
-    padding: var(--gutter-xs);
+    padding: var(--gutter-200);
     display: inline-block;
-    border: 1px solid var(--grey-600);
-    border-radius: var(--radius-xs);
+    border: 1px solid var(--shade-600);
+    border-radius: var(--radius-300);
     font-size: 1rem;
 }
 
@@ -71,7 +71,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 textarea:focus {
-    outline: 1px solid var(--grey-100);
+    outline: 1px solid var(--shade-100);
     outline-offset: 0;
 }
 
@@ -125,7 +125,7 @@ label {
     position:absolute;
     top:50%;
     transform:translateY(-50%);
-    left:var(--gutter-xs);
+    left:var(--gutter-200);
     transition:all .3s ease;
     pointer-events:none;
     opacity:0.5;
@@ -156,16 +156,16 @@ Select dropdowns
 =================== */
 select {
     width: 100%;
-    padding: var(--gutter-xs);
+    padding: var(--gutter-200);
     display: inline-block;
-    border: 1px solid var(--grey-600);
-    border-radius: var(--radius-xs);
+    border: 1px solid var(--shade-600);
+    border-radius: var(--radius-300);
     font-size: 1rem;
 }
 
 /* Focus states for select dropdowns */
 select:focus {
-    outline: 1px solid var(--grey-100);
+    outline: 1px solid var(--shade-100);
     outline-offset: 0;
 }
 
@@ -173,13 +173,13 @@ select:focus {
 Fieldset and Legend
 =================== */
 fieldset {
-    border: 1px solid var(--grey-600);
-    padding: var(--gutter-s);
-    border-radius: var(--radius-xs);
+    border: 1px solid var(--shade-600);
+    padding: var(--gutter-400);
+    border-radius: var(--radius-300);
 }
 
 legend {
-    padding: 0 var(--gutter-xs);
+    padding: 0 var(--gutter-200);
 }
 
 /* ===================
@@ -188,7 +188,7 @@ Password field with icon
 .password-container .toggle-password {
     position: absolute;
     top: 0;
-    right: var(--gutter-xs);
+    right: var(--gutter-200);
     cursor: pointer;
     height:100%;
     display:flex;
@@ -207,7 +207,7 @@ Password field with icon
 }
 
 .password-container input[type="password"] {
-    padding-right:var(--gutter-m);
+    padding-right:var(--gutter-600);
 }
 
 /* ===================

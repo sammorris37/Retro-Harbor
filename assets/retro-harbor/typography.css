@@ -6,6 +6,15 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* ---------
+Font Family
+--------- */
+.ff-primary { font-family: var(--font-family-primary); }
+
+.ff-secondary { font-family: var(--font-family-secondary); }
+
+.ff-third { font-family: var(--font-family-third); }
+
 body {
     --font-size:1rem;
     --line-height:calc(var(--font-size) + 0.5rem);
@@ -92,93 +101,25 @@ a:not([class]) {
 
 a:not([class]):hover {
     opacity:0.7;
-  }
-
-/* ===================
-Tablet Styles
-=================== */
-@media only screen and (max-width: 1041px) {
-    .h0 {
-        font-size: /* H0 Font Size - Tablet */;
-    }
-    
-    h1,
-    .h1 {
-        font-size: /* H1 Font Size - Tablet */;
-    }
-    
-    h2,
-    .h2 {
-        font-size: /* H2 Font Size - Tablet */;  
-    }
-    
-    h3,
-    .h3 {
-        font-size: /* H3 Font Size - Tablet */;
-    }
-    
-    h4,
-    .h4 {
-        font-size: /* H4 Font Size - Tablet */;  
-    }
-    
-    h5,
-    .h5 {
-        font-size: /* H5 Font Size - Tablet */;
-    }
-    
-    h6,
-    .h6 {
-        font-size: /* H6 Font Size - Tablet */;  
-    }
-    
-    p,
-    .p {
-        font-size: /* P Font Size - Tablet */;
-        margin-bottom: var(--gutter-xs);
-    }
 }
 
-/* ===================
-Mobile Styles
-=================== */
-@media only screen and (max-width: 769px) {
-    .h0 {
-        font-size: /* H0 Font Size */;
-    }
-    
-    h1,
-    .h1 {
-        font-size: /* H1 Font Size - Mobile */;
-    }
-    
-    h2,
-    .h2 {
-        font-size: /* H2 Font Size - Mobile */;  
-    }
-    
-    h3,
-    .h3 {
-        font-size: /* H3 Font Size - Mobile */;
-    }
-    
-    h4,
-    .h4 {
-        font-size: /* H4 Font Size - Mobile */;  
-    }
-    
-    h5,
-    .h5 {
-        font-size: /* H5 Font Size - Mobile */;
-    }
-    
-    h6,
-    .h6 {
-        font-size: /* H6 Font Size - Mobile */;  
-    }
-    
-    p,
-    .p {
-        font-size: /* P Font Size - Mobile */;
-    }
+.small { font-size:var(--small); }
+
+.large { font-size:var(--large); }
+
+/* ---------
+Font Styles
+--------- */
+.overline {
+    text-transform:uppercase;
+}
+
+em,
+.italic {
+    font-style: italic;
+}
+
+strong,
+.strong {
+    font-weight:var(--fw-700);
 }
