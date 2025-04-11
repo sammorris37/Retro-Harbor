@@ -12,15 +12,15 @@ Root Variables
 
 ============================================================= */
 :root {
-    /* --- Colors --- */
-    --primary-100: /* Primary Color 100 */;
+    	/* --- Colors --- */
+    	--primary-100: /* Primary Color 100 */;
 	--primary-200: /* Primary Color 200 */;
 	--primary-300: /* Primary Color 300 */;
 
-    --secondary-100: hsl(0, 0%, 93%);
+    	--secondary-100: hsl(0, 0%, 93%);
 	--secondary-200: hsl(0, 0%, 80%);
-    --secondary-300: /* Secondary Color 300 */;
-    --secondary-400: /* Secondary Color 400 */;
+    	--secondary-300: /* Secondary Color 300 */;
+    	--secondary-400: /* Secondary Color 400 */;
 
 	--black: hsl(0, 0%, 0%)/* Black */;
 	--white: hsl(0, 0%, 100%)/* White */;
@@ -56,9 +56,9 @@ Root Variables
 	--small: 0.875rem;
 	--large: 1.125rem;
 
-    --font-family-primary: /* Font Family Primary */;
+    	--font-family-primary: /* Font Family Primary */;
 	--font-family-secondary:/* Font Family Secondary */;
-    --font-family-third: /* Font Family Third */;
+    	--font-family-third: /* Font Family Third */;
 
 	--fw-100: 100;
 	--fw-200: 200;
@@ -73,9 +73,9 @@ Root Variables
     /* --- Gutters ---*/
 	--gutter-100: .5rem;
 	--gutter-200: 1rem;
-    --gutter-300: 1.5rem;
-    --gutter-400: 2rem;
-    --gutter-500: 2.5rem;
+	--gutter-300: 1.5rem;
+	--gutter-400: 2rem;
+	--gutter-500: 2.5rem;
 	--gutter-600: 3rem;
 	--gutter-700: 4rem;
 	--gutter-800: 6rem;
