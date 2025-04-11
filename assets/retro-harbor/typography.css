@@ -6,22 +6,13 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* ---------
-Font Family
---------- */
-.ff-primary { font-family: var(--font-family-primary); }
-
-.ff-secondary { font-family: var(--font-family-secondary); }
-
-.ff-third { font-family: var(--font-family-third); }
-
 body {
     --font-size:1rem;
     --line-height:calc(var(--font-size) + 0.5rem);
     font-size: var(--font-size);
     line-height:var(--line-height);
     font-family:var(--font-family-primary);
-    color:var(--grey-100);
+    color:var(--shade-100);
 }
 
 h1,
@@ -31,71 +22,59 @@ h4,
 h5,
 h6,
 p {
+    --line-height:calc(var(--font-size) + 0.5rem);
+    --font-weight: var(--fw-regular);
 	margin: 0;
     font-size: var(--font-size);
-    font-weight:var(--fw-regular);
-    margin-bottom:var(--gutter-xs);
+    font-weight:var(--font-weight);
+    margin-bottom:var(--gutter-300);
     line-height:var(--line-height);
-    --line-height:calc(var(--font-size) + 0.5rem);
 }
 
 .h0 {
-    --font-size:4.5rem;  
+    --font-size:var(--h0);  
 }
 
 h1,
 .h1 {
-    --font-size:4rem;
+    --font-size:var(--h1);
 }
 
 h2,
 .h2 {
-    --font-size:3.5rem;
+    --font-size:var(--h2);
 }
 
 h3,
 .h3 {
-    --font-size:3rem;
+    --font-size:var(--h3);
 }
 
 h4,
 .h4 {
-    --font-size:2.5rem;
+    --font-size:var(--h4);
 }
 
 h5,
 .h5 {
-    --font-size:2rem;
+    --font-size:var(--h5);
 }
 
 h6,
 .h6 {
-    --font-size:1.5rem;
+    --font-size:var(--h6);
 }
 
 p,
 .p {
-    --font-size:1rem;
+    --font-size:var(--body);
     --line-height:calc(var(--font-size) + 0.8rem);
     font-weight:var(--fw-regular);
-	margin-bottom: var(--gutter-xs);
-}
-
-p:first-of-type{
-    margin-top: 0;
-}
-
-p:last-of-type{
-    margin-bottom: 0;
-	margin-top: 0;
-}
-
-p:only-of-type {
-	margin-bottom:var(--gutter-xs);
+	margin-bottom: var(--gutter-300);
 }
 
 a:not([class]) {
-  color:var(--primary-100);
+  color:var(--shade-100);
   text-underline-offset:4px;
 }
 
@@ -123,3 +102,12 @@ strong,
 .strong {
     font-weight:var(--fw-700);
 }
+
+/* ---------
+Font Family
+--------- */
+.ff-primary { font-family: var(--font-family-primary); }
+
+.ff-secondary { font-family: var(--font-family-secondary); }
+
+.ff-third { font-family: var(--font-family-third); }

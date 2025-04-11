@@ -26,15 +26,15 @@ Root Variables
 	--white: hsl(0, 0%, 100%)/* White */;
 
 	/* Shades */
-	--grey-100: hsl(0, 0%, 93%);
-	--grey-200: hsl(0, 0%, 87%);
-	--grey-300: hsl(0, 0%, 80%);
-	--grey-400: hsl(0, 0%, 73%);
-	--grey-500: hsl(0, 0%, 67%);
-	--grey-600: hsl(0, 0%, 53%);
-	--grey-700: hsl(0, 0%, 40%);
-	--grey-800: hsl(0, 0%, 27%);
-	--grey-900: hsl(0, 0%, 13%);
+	--shade-100: hsl(0, 0%, 93%);
+	--shade-200: hsl(0, 0%, 87%);
+	--shade-300: hsl(0, 0%, 80%);
+	--shade-400: hsl(0, 0%, 73%);
+	--shade-500: hsl(0, 0%, 67%);
+	--shade-600: hsl(0, 0%, 53%);
+	--shade-700: hsl(0, 0%, 40%);
+	--shade-800: hsl(0, 0%, 27%);
+	--shade-900: hsl(0, 0%, 13%);
 
 	/* Notifications */
 	--ntf-100: hsl(143, 79%, 87%);

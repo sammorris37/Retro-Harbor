@@ -3,8 +3,8 @@ Chip Styles
 ============================================================= */
 .chip {
     --chip-padding:0.2rem 1rem;
-    --chip-color:var(--secondary-200);
-    --chip-text-color:var(--primary-400);
+    --chip-color:var(--shade-400);
+    --chip-text-color:var(--shade-900);
     --chip-font-size:0.875rem;
     display:inline-flex;
     align-items:center;
