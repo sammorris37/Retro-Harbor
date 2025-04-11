@@ -190,13 +190,32 @@ Shades
 /* ===================
 Typography
 =================== */
-
 .text-center { text-align:center; }
+.text-left { text-align:left; }
+.text-right { text-align:right; }
+
+.small { font-size:var(--small); }
+.large { font-size:var(--large); }
+
+.overline { text-transform:uppercase; }
+
+em,
+.italic {
+    font-style: italic;
+}
+
+strong,
+.strong {
+    font-weight:var(--fw-700);
+}
+
+.ff-primary { font-family: var(--font-family-primary); }
+.ff-secondary { font-family: var(--font-family-secondary); }
+.ff-third { font-family: var(--font-family-third); }
 
 /* ===================
-Misc / Other
+Overflows
 =================== */
-/* Overflows */
 .overflow-hidden {
     overflow:hidden;
     -ms-overflow-style: none;
@@ -209,24 +228,18 @@ Misc / Other
     overflow-y: scroll;
 }
 
-.no-scrollbars::-webkit-scrollbar  {
-    display: none;
-}
+.no-scrollbars::-webkit-scrollbar  { display: none; }
 
-/* Overlays */
-.overlay__default {
-    border-image:fill 1 linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%);
-}
+/* ===================
+Overlays
+=================== */
+.border-overlay__default { border-image:fill 1 linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); }
+.border-overlay__radial { border-image:fill 1 radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%); }
+.border-overlay__linear { border-image:fill 1 linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%); }
 
-.overlay__radial {
-    border-image:fill 1 radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
-}
-
-.overlay__linear {
-    border-image:fill 1 linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%);
-}
-
-/* Selection */
+/* ===================
+Selections
+=================== */
 ::-moz-selection {
     color: #eab463;
     background: var(--black);
@@ -238,9 +251,8 @@ Misc / Other
 }
 
 /* ===================
-Container Utilities
+Image Holders
 =================== */
-/* Images */
 .img-holder-square {
     width:100%;
     aspect-ratio:1 / 1;
@@ -262,7 +274,9 @@ Container Utilities
     display:block;
 }
 
-/* Videos ~ Youtube / Vimeo Embeds */
+/* ===================
+Video Holders / Overlays
+=================== */
 .video-holder {
     position: relative;
     aspect-ratio:16 / 9;
@@ -270,16 +284,14 @@ Container Utilities
 
 .video-holder iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset:0;
     width: 100%;
     height: 100%;
 }
 
 .play-video {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset:0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);

@@ -81,33 +81,3 @@ a:not([class]) {
 a:not([class]):hover {
     opacity:0.7;
 }
-
-.small { font-size:var(--small); }
-
-.large { font-size:var(--large); }
-
-/* ---------
-Font Styles
---------- */
-.overline {
-    text-transform:uppercase;
-}
-
-em,
-.italic {
-    font-style: italic;
-}
-
-strong,
-.strong {
-    font-weight:var(--fw-700);
-}
-
-/* ---------
-Font Family
---------- */
-.ff-primary { font-family: var(--font-family-primary); }
-
-.ff-secondary { font-family: var(--font-family-secondary); }
-
-.ff-third { font-family: var(--font-family-third); }
