@@ -222,13 +222,13 @@ Overflows
     scrollbar-width: none;
 }
 
-.no-scrollbars {
+.no-scrollbars-y {
     -ms-overflow-style: none;
     scrollbar-width: none; 
     overflow-y: scroll;
 }
 
-.no-scrollbars::-webkit-scrollbar  { display: none; }
+.no-scrollbars-y::-webkit-scrollbar  { display: none; }
 
 /* ===================
 Overlays
