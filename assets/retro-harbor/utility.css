@@ -216,13 +216,8 @@ strong,
 /* ===================
 Positions
 =================== */
-.relative {
-    position:relative;
-}
-
-.isolate {
-    isolation: isolate;
-}
+.relative { position:relative; }
+.isolate { isolation: isolate; }
 
 /* ===================
 Overflows
