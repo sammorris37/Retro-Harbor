@@ -214,6 +214,17 @@ strong,
 .ff-third { font-family: var(--font-family-third); }
 
 /* ===================
+Positions
+=================== */
+.relative {
+    position:relative;
+}
+
+.isolate {
+    isolation: isolate;
+}
+
+/* ===================
 Overflows
 =================== */
 .overflow-hidden {
