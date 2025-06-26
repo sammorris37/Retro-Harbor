@@ -62,7 +62,7 @@ Containers
 }
 
 /* ===================
-Grids
+Grid
 =================== */
 .grid {
     --grid-max-col-count:1;
@@ -94,4 +94,87 @@ Grids
     .grid {
         --grid-gap:1rem;
     }
+}
+
+/* ===================
+Flex
+=================== */
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+/* Flex Directions / Wrap */
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Justify Content */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* Align Items */
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+/* Flex Grow / Shrink */
+.grow {
+  flex-grow: 1;
+}
+
+.shrink {
+  flex-shrink: 1;
 }
