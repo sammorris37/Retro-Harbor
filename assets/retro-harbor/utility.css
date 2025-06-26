@@ -31,6 +31,7 @@ Gutters / Spacing ~ Padding / Margin
 .mbs-700 { margin-block-start: var(--gutter-700); }
 .mbs-800 { margin-block-start: var(--gutter-800); }
 .mbs-900 { margin-block-start: var(--gutter-900); }
+.mbs-0 { margin-block-start: 0; }
 
 /* Margin Block End */
 .mbe-100 { margin-block-end: var(--gutter-100); }
@@ -42,6 +43,7 @@ Gutters / Spacing ~ Padding / Margin
 .mbe-700 { margin-block-end: var(--gutter-700); }
 .mbe-800 { margin-block-end: var(--gutter-800); }
 .mbe-900 { margin-block-end: var(--gutter-900); }
+.mbs-0 { margin-block-end: 0; }
 
 /* Margin Block */
 .mb-100 { margin-block: var(--gutter-100); }
@@ -53,6 +55,7 @@ Gutters / Spacing ~ Padding / Margin
 .mb-700 { margin-block: var(--gutter-700); }
 .mb-800 { margin-block: var(--gutter-800); }
 .mb-900 { margin-block: var(--gutter-900); }
+.mb-0 { margin-block: 0; }
 
 /* Margin Inline */
 .mi-100 { margin-inline: var(--gutter-100); }
@@ -64,6 +67,7 @@ Gutters / Spacing ~ Padding / Margin
 .mi-700 { margin-inline: var(--gutter-700); }
 .mi-800 { margin-inline: var(--gutter-800); }
 .mi-900 { margin-inline: var(--gutter-900); }
+.mi-0 { margin-inline: 0; }
 
 /* Margin (all sides) */
 .m-100 { margin: var(--gutter-100); }
@@ -75,6 +79,7 @@ Gutters / Spacing ~ Padding / Margin
 .m-700 { margin: var(--gutter-700); }
 .m-800 { margin: var(--gutter-800); }
 .m-900 { margin: var(--gutter-900); }
+.m-0 { margin: 0; }
 
 /* Padding Block Start */
 .pbs-100 { padding-block-start: var(--gutter-100); }
@@ -86,6 +91,7 @@ Gutters / Spacing ~ Padding / Margin
 .pbs-700 { padding-block-start: var(--gutter-700); }
 .pbs-800 { padding-block-start: var(--gutter-800); }
 .pbs-900 { padding-block-start: var(--gutter-900); }
+.pbs-0 { padding-block-start: 0; }
 
 /* Padding Block End */
 .pbe-100 { padding-block-end: var(--gutter-100); }
@@ -97,6 +103,7 @@ Gutters / Spacing ~ Padding / Margin
 .pbe-700 { padding-block-end: var(--gutter-700); }
 .pbe-800 { padding-block-end: var(--gutter-800); }
 .pbe-900 { padding-block-end: var(--gutter-900); }
+.pbe-0 { padding-block-end: 0; }
 
 /* Padding Block */
 .pb-100 { padding-block: var(--gutter-100); }
@@ -108,6 +115,7 @@ Gutters / Spacing ~ Padding / Margin
 .pb-700 { padding-block: var(--gutter-700); }
 .pb-800 { padding-block: var(--gutter-800); }
 .pb-900 { padding-block: var(--gutter-900); }
+.pb-0 { padding-block: 0; }
 
 /* Padding Inline */
 .pi-100 { padding-inline: var(--gutter-100); }
@@ -119,6 +127,7 @@ Gutters / Spacing ~ Padding / Margin
 .pi-700 { padding-inline: var(--gutter-700); }
 .pi-800 { padding-inline: var(--gutter-800); }
 .pi-900 { padding-inline: var(--gutter-900); }
+.pi-0 { padding-inline: 0; }
 
 /* Padding (all sides) */
 .p-100 { padding: var(--gutter-100); }
@@ -130,6 +139,7 @@ Gutters / Spacing ~ Padding / Margin
 .p-700 { padding: var(--gutter-700); }
 .p-800 { padding: var(--gutter-800); }
 .p-900 { padding: var(--gutter-900); }
+.p-0 { padding: 0; }
 
 
 /* ===================
