@@ -174,20 +174,6 @@ Gap
 .gap-y-800 { row-gap: var(--gutter-800); }
 .gap-y-900 { row-gap: var(--gutter-900); }
 
-
-/* ===================
-Border Radius
-=================== */
-.radius-100 { border-radius: var(--radius-100); }
-.radius-200 { border-radius: var(--radius-200); }
-.radius-300 { border-radius: var(--radius-300); }
-.radius-400 { border-radius: var(--radius-400); }
-.radius-500 { border-radius: var(--radius-500); }
-.radius-600 { border-radius: var(--radius-600); }
-.radius-700 { border-radius: var(--radius-700); }
-.radius-800 { border-radius: var(--radius-800); }
-.radius-900 { border-radius: var(--radius-900); }
-
 /* ===================
 Colors
 =================== */
@@ -252,6 +238,19 @@ Borders
 .border-shade-700 { border-color: var(--shade-700); }
 .border-shade-800 { border-color: var(--shade-800); }
 .border-shade-900 { border-color: var(--shade-900); }
+
+/* ===================
+Border Radius
+=================== */
+.radius-100 { border-radius: var(--radius-100); }
+.radius-200 { border-radius: var(--radius-200); }
+.radius-300 { border-radius: var(--radius-300); }
+.radius-400 { border-radius: var(--radius-400); }
+.radius-500 { border-radius: var(--radius-500); }
+.radius-600 { border-radius: var(--radius-600); }
+.radius-700 { border-radius: var(--radius-700); }
+.radius-800 { border-radius: var(--radius-800); }
+.radius-900 { border-radius: var(--radius-900); }
 
 /* ===================
 Shadows
