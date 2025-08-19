@@ -240,7 +240,7 @@ Borders
 .border-shade-900 { border-color: var(--shade-900); }
 
 /* ===================
-Border Radius
+Border Radius'
 =================== */
 .radius-100 { border-radius: var(--radius-100); }
 .radius-200 { border-radius: var(--radius-200); }
