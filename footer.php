@@ -1,5 +1,5 @@
         <footer class="site-footer grid-content">
-            <p>&copy; 2024. Retro Harbar by Sam Morris.</p>
+            <p>&copy; 2025. Retro Harbar by Sam Morris.</p>
         </footer>
     </main>
 </body>
